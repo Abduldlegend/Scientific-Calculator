@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal-container{
+    width: 90%;
+    max-width: 500px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid #001B2E;
+    border-radius: 15px;
+    background-color: #2A4B5F;
+    
+}
+.input-section{
+    width: 90%;
+    height: 20%;
+}
+#input{
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+    font-weight: 300;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+.sci-function-section{
+    width: 90%;
+    height: 35%;
+    margin-bottom: 5%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto;
+}
+.numbers-section{
+    width: 90%;
+    height: 30%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 5%;
+}
+hr{
+    width: 95%;
+    height: 2px;
+    color: white;
+}
+
+.btn-funtion, .btn-arithmetic{
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #C6D6D7;
+    color: 2A4B5F;
+    border-radius: 8px;
+}
+.btn-arithmetic:hover, .btn-funtion:hover{
+    background-color: #001B2E;
+    color: white;
+}
+.art13{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

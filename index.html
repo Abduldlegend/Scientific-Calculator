@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="cal-container">
+            <div class="input-section">
+                <input type="input" id="input" readonly>
+            </div>
+            <div class="sci-function-section">
+                <button class="btn-funtion" onclick="addToInputField('(')">(</button>
+                <button class="btn-funtion" onclick="addToInputField(')')">)</button>
+                <button class="btn-funtion" onclick="addToInputField('sqrt(')">&radic;</button>
+                <button class="btn-funtion" onclick="addToInputField('^')">X<sup>x</sup></button>
+                <button class="btn-funtion" onclick="addToInputField('')">logx</button>
+                <button class="btn-funtion" onclick="addToInputField('sin(')">sin</button>
+                <button class="btn-funtion" onclick="addToInputField('cos(')">cos</button>
+                <button class="btn-funtion" onclick="addToInputField('tan(')">tan</button>
+                <button class="btn-funtion" onclick="addToInputField('')">n!</button>
+                <button class="btn-funtion" onclick="addToInputField('')">ln</button>
+                <button class="btn-funtion" onclick="addToInputField('')">log</button>
+                <button class="btn-funtion" onclick="clearInputField()">C</button>
+                <button class="btn-funtion" onclick="addToInputField('')">13</button>
+                <button class="btn-funtion" onclick="addToInputField('')">&pi;</button>
+                <button class="btn-funtion" onclick="addToInputField('.')">.</button>
+                <button class="btn-funtion Delete" onclick="deleteValue()">&#9003;</button>
+            </div>
+            <hr>
+            <div class="numbers-section">
+                <button class="btn-arithmetic" onclick="addToInputField('7')">7</button>
+                <button class="btn-arithmetic" onclick="addToInputField('8')">8</button>
+                <button class="btn-arithmetic" onclick="addToInputField('9')">9</button>
+                <button class="btn-arithmetic" onclick="addToInputField('+')">+</button>
+                <button class="btn-arithmetic" onclick="addToInputField('4')">4</button>
+                <button class="btn-arithmetic" onclick="addToInputField('5')">5</button>
+                <button class="btn-arithmetic" onclick="addToInputField('6')">6</button>
+                <button class="btn-arithmetic" onclick="addToInputField('-')">-</button>
+                <button class="btn-arithmetic" onclick="addToInputField('1')">1</button>
+                <button class="btn-arithmetic" onclick="addToInputField('2')">2</button>
+                <button class="btn-arithmetic" onclick="addToInputField('3')">3</button>
+                <button class="btn-arithmetic" onclick="addToInputField('*')">x</button>
+                <button class="btn-arithmetic art13" onclick="calculateResult()">=</button>
+                <button class="btn-arithmetic" onclick="addToInputField('0')">0</button>
+                <button class="btn-arithmetic" onclick="addToInputField('/')">/</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
