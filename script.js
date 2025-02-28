@@ -28,7 +28,7 @@ function calculateResult(){
         
         expression = expression.replace(/tan\((.*?)\)/g, (_, expr) => `Math.tan((${expr}) * Math.PI / 180)`);
 
-        expression = expression.replace(/ln/g, "Math.log");
+        expression = expression.replace(/log/g, "Math.log");
 
         expression = expression.replace(/3.142/g, "Math.PI");
 
